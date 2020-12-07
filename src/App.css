@@ -1,0 +1,192 @@
+.page-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+.page-name {
+  font-weight: 200;
+  color: lightblue !important;
+}
+
+.public-nav,
+nav-scroll {
+  top: 0;
+  left: 0;
+  padding-left: 30px !important;
+  width: 100vw;
+  z-index: 1000;
+  position: fixed !important;
+  transition: background-color 0.5s;
+}
+
+.dropdown-menu {
+  background-color: rgb(15, 15, 15) !important;
+}
+
+.active {
+  background-color: rgb(15, 15, 15) !important;
+}
+
+.dropdown-item {
+  color: white !important;
+}
+.dropdown-item:hover {
+  background-color: lightblue !important;
+}
+
+.nav-scroll {
+  background-color: rgb(15, 15, 15) !important;
+}
+
+.section-title {
+  color: lightblue !important;
+  align-self: flex-start;
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+.carousel-item {
+  z-index: 0;
+}
+
+.carousel-overlay {
+  position: absolute !important;
+  left: 0px !important;
+  top: 0px !important;
+  width: 100%;
+  height: 100% !important;
+  padding-bottom: 50px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgba(15, 15, 15, 0.7);
+}
+
+.carousel-text h3 {
+  font-weight: lighter !important;
+  font-size: 2.5rem;
+}
+
+.carousel-text p {
+  width: 60%;
+  font-size: 1.5rem;
+  overflow-y: scroll !important;
+  font-weight: 300 !important;
+}
+
+.deck {
+  width: 100vw;
+}
+.movie {
+  background-color: black !important;
+  min-width: 250px !important;
+  max-width: 250px !important;
+  margin-bottom: 30px !important;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+  z-index: 999;
+}
+
+.highlight {
+  /* min-width: 80% !important; */
+  width: 80% !important;
+  min-width: 400px !important;
+  max-width: 1000px !important;
+}
+
+.highlight-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(15, 15, 15, 0.7);
+  background: -moz-linear-gradient(
+    left,
+    rgba(15, 15, 15, 0.7) 0%,
+    rgba(50, 50, 50, 0.7) 42%,
+    rgba(170, 170, 170) 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(15, 15, 15, 0.7) 0%,
+    rgba(50, 50, 50, 0.7) 42%,
+    rgba(170, 170, 170) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgb(15, 15, 15, 0.7) 0%,
+    rgb(50, 50, 50, 0.7) 42%,
+    rgb(170, 170, 170, 0.7) 100%
+  );
+}
+
+.highlight-title,
+.highlight-overview,
+.highlight-trailer,
+.highlight-score {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: white;
+}
+
+.highlight-genres,
+.highlight-year {
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+.highlight-genre {
+  color: lightblue;
+}
+
+.highlight-year {
+  color: white;
+  font-weight: bold;
+}
+
+.highlight-genre:hover {
+  color: lightblue;
+}
+
+.highlight-title,
+.highlight-score {
+  font-size: xxx-large !important;
+  font-weight: lighter !important;
+}
+.highlight-title {
+  max-width: 60%;
+}
+
+.highlight-overview {
+  width: 60%;
+  height: 30%;
+  overflow-y: scroll !important;
+  font-weight: 300 !important;
+}
+
+.highlight-score {
+  margin-right: 20px !important;
+  padding: 5px 12px 5px 12px !important;
+  border: 1px solid white;
+  border-radius: 5px !important;
+}
+
+.max-score {
+  font-size: large !important;
+  color: lightgrey;
+}
+
+.highlight-trailer {
+  width: 200px;
+}
+
+@media screen and (max-width: 750px) {
+  .highlight-title,
+  .highlight-score {
+    font-size: xx-large !important;
+  }
+}
